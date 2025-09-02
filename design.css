@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('01.jpg') no-repeat center center;
+    background-size: cover; 
+   
+}
+@keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+.calculator {
+    padding: 30px;
+    border-radius:15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.477);
+    width: 50vh;
+    background: rgba(244, 243, 243, 0.204);
+    backdrop-filter: blur(30px);
+    
+}
+
+#display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.708);
+    color: #ffffff;
+    border: none;
+    text-align: right;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+}
+
+button {
+    color: #000000;
+    border: none;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.304);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.162);
+}
+
+button.equals {
+    grid-column: span 2;
+    background: rgba(240, 239, 239, 0.199);
+}
+
+button.equals:hover {
+    background: rgba(6, 255, 6, 0.621);
+}
+
+button.zero {
+    grid-column: span 2;
+}
